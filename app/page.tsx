@@ -69,7 +69,7 @@ export default function Home() {
     const formData = new FormData();
     formData.append("image", file);
 
-    const api_route = "http://127.0.0.1:8000/inferenceModel";
+    const api_route = "https://yolo-model-api.onrender.com/inferenceModel";
 
     try {
       const response = await axios.post(api_route, formData);
